@@ -41,7 +41,7 @@
     "util.js"
   ],
   "scripts": {
-    "start": "DEEPL_MOCK_SERVER_PORT=${DEEPL_MOCK_SERVER_PORT:-3000} DEEPL_MOCK_PROXY_SERVER_PORT=${DEEPL_MOCK_PROXY_SERVER_PORT:-3001} node index.js",
+    "start": "set DEEPL_MOCK_SERVER_PORT=3000&& set DEEPL_MOCK_PROXY_SERVER_PORT=3001&& node index.js",
     "lint": "eslint .",
     "lintfix": "eslint . --fix"
   }
